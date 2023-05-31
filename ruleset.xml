@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<ruleset name="MyStandard~">
+<ruleset name="Laravel Code Sniffer">
  <description>A custom coding standard.</description>
  
 </ruleset>
