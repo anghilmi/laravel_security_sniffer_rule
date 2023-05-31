@@ -58,7 +58,7 @@ class DisallowWeakHashSniff implements Sniff
             }
 
             if((preg_match($patternSHA1, $str)==1)){ //regex
-                $warning = 'hash yang digunakan, tidak aman; Found %s';
+                $warning = 'hash yang digunakan, tidak aman; Found %s, baca rekom https://s.id/laravelCS';
                 $data  = array(trim($tokens[$stackPtr]['content']));
                 $phpcsFile->addWarning($warning, $stackPtr, 'Found', $data);
             }
