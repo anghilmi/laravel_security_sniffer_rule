@@ -54,7 +54,7 @@ class DetectUploadFileProcess implements Sniff
                 ){
                 
 
-                $warning = 'terdeteksi kode untuk upload file/gambar, perhatikan hal berikut: doc.laravuln.id';//.$tokens[$getTokenAfterDoubleArrow]['code'];
+                $warning = 'terdeteksi kode untuk upload file/gambar, baca rekom https://s.id/laravelCS';//.$tokens[$getTokenAfterDoubleArrow]['code'];
                 $data  = array(trim($tokens[$stackPtr]['content']));
                 $phpcsFile->addWarning($warning, $stackPtr, 'Found', $data);
 
