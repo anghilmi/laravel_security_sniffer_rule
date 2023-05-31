@@ -16,7 +16,7 @@ namespace PHP_CodeSniffer\Standards\MyStandard\Sniffs;
 use PHP_CodeSniffer\Sniffs\Sniff;
 use PHP_CodeSniffer\Files\File;
 
-class DisallowHashWeakSniff implements Sniff
+class DisallowWeakHashSniff implements Sniff
 {
 
 
