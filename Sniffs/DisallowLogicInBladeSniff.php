@@ -82,7 +82,7 @@ class DisallowLogicInBladeSniff implements Sniff
            
             //proses yang afterstring berbau id dan bukan berbau form dalam baris kodenya
         
-            $warning = 'Found logic in blade'. $tokens[$stackPtr]['content'] .' read more: https://laravuln.id#bladeLogic';
+            $warning = 'Found logic in blade'. $tokens[$stackPtr]['content'] .' baca rekom https://s.id/laravelCS';
             $data  = array(trim($tokens[$stackPtr]['content']));
             $phpcsFile->addWarning($warning, $stackPtr, 'Found', $data);
 
