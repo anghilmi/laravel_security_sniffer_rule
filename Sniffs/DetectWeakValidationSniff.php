@@ -55,7 +55,7 @@ class DetectWeakValidationSniff implements Sniff
             ) {
                 
 
-                $warning = 'cek apakah validasi input sudah baik? cek di doc laravel';//.$tokens[$getTokenAfterDoubleArrow]['code'];
+                $warning = 'cek apakah validasi input sudah baik? baca rekom https://s.id/laravelCS';//.$tokens[$getTokenAfterDoubleArrow]['code'];
                 $data  = array(trim($tokens[$stackPtr]['content']));
                 $phpcsFile->addWarning($warning, $stackPtr, 'Found', $data);
 
