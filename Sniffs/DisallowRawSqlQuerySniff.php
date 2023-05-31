@@ -74,7 +74,7 @@ class DisallowRawSqlQuerySniff implements Sniff
                 ){
                 
 
-                $warning = 'terdeteksi adanya syntax SQL raw, hindari!';
+                $warning = 'terdeteksi adanya syntax SQL raw, baca rekom https://s.id/laravelCS';
                 $data  = array(trim($tokens[$stackPtr]['content']));
                 $phpcsFile->addWarning($warning, $stackPtr, 'Found', $data);
 
