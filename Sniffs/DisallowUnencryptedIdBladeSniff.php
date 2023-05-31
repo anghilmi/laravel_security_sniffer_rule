@@ -81,7 +81,7 @@ class DisallowUnencryptedIdBladeSniff implements Sniff
            
             //proses yang afterstring berbau id dan bukan berbau form dalam baris kodenya
         
-            $warning = 'Found '. $getVarString .'->'. $fixGetAfterVarString .', sebaiknya diubah menjadi Crypt::encrypt('. $getVarString .'->'. $fixGetAfterVarString. '). Cek juga controller terkait, read more: https://laravuln.id#id';
+            $warning = 'Found '. $getVarString .'->'. $fixGetAfterVarString .', baca rekom https://s.id/laravelCS';
             $data  = array(trim($tokens[$stackPtr]['content']));
             $phpcsFile->addWarning($warning, $stackPtr, 'Found', $data);
 
