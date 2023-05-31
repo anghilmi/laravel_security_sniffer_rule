@@ -80,7 +80,7 @@ class DetectReadOnlyInBladeSniff implements Sniff
            
             //proses yang afterstring berbau id dan bukan berbau form dalam baris kodenya
         
-            $warning = 'readonly detected in blade; elemen data yang readonly tidak boleh diproses di bagian controller, rentan diubah dengan inspect element,'.' read more: https://laravuln.id#bladeLogic';
+            $warning = 'read-only detected in blade; baca rekom https://s.id/laravelCS';
             $data  = array(trim($tokens[$stackPtr]['content'])); 
             $phpcsFile->addWarning($warning, $stackPtr, 'Found', $data);
 
