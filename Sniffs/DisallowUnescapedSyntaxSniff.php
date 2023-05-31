@@ -85,7 +85,7 @@ class DisallowUnescapedSyntaxSniff implements Sniff
             // echo $temp;
 
            
-            $warningAkhir = '{!'.$warning.'!}';
+            $warningAkhir = '{!'.$warning.'!}, baca rekom https://s.id/laravelCS';
             $data  = array(trim($tokens[$stackPtr]['content']));
             $phpcsFile->addWarning($warningAkhir, $stackPtr, 'Found', $data);
 
