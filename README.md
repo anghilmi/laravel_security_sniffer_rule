@@ -1,7 +1,20 @@
 ## laravel_security_sniffer_rule
 Code security sniffer for Laravel based web project (Windows OS only)
 
-## Installation
+## Rules
+1. Detect weak hash (ex. md5, sha1)
+2. Detect input validation
+3. Detect upload file/image code
+4. Detect unescaped syntax {!! ... !!}
+5. Detect unencrypted ID (url)
+6. Detect logic in blade file
+7. Detect readonly logic in blade file
+8. Detect raw SQL query
+
+## VSCode Extension
+Visit on [marketplace](https://marketplace.visualstudio.com/items?itemName=MuhAnisAlHilmi.laravel-php-codesniffer)
+
+## Rule Installation
 1. You must have Composer. If not, please download here (https://getcomposer.org/Composer-Setup.exe) and install
 2. Open CMD/terminal, copy-paste this command:
 
