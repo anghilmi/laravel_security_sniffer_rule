@@ -25,3 +25,7 @@ composer global require "squizlabs/php_codesniffer=*" && cd %userprofile%\Downlo
 ## Todo
 1. Perbaikan deteksi validasi input
 2. Rename nama rule yang lebih baik
+
+## Related Project
+[Laravuln](https://github.com/GustiAdithiya/laravuln): Website Perpustakaan Berbasis Laravel 9 yang sengaja dibuat rentan/vulnerable. Dipakai untuk edukasi, simulasi beragam jenis serangan dan antisipasinya.
+
