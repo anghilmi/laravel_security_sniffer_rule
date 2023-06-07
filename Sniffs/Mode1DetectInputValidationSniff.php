@@ -33,30 +33,13 @@ class Mode1DetectInputValidationSniff implements Sniff
             && $tokens[$stackPtr]['content'] === 'validate'
             && $tokens[$getNextToken]['content'] === '('
             && ($tokens[$getNextNextToken]['content'] === '[' || $tokens[$getNextNextToken]['content'] === '$request' )
-        ) {                
+        ) {         
             $warning = 'Terdeteksi adanya proses input data mode $this/request->validate, baca rekom https://s.id/laravelCS';
             $data  = array(trim($tokens[$stackPtr]['content']));
             $phpcsFile->addWarning($warning, $stackPtr, 'Found', $data);
 
-        } elseif (
-            //detect ::create([ 
-            /*
-            example:
-            Customer::create([
-                'name' => $request->name,
-                'email' => $request->email,
-                'address' => $request->address
-            ]);               
-            */
-            $tokens[$stackPtr]['code'] === T_STRING 
-            && $tokens[$stackPtr]['content'] === 'create'
-            && $tokens[$stackPtr-1]['content'] === '::'
-            && ($tokens[$getNextToken]['content'] === '(')) {
-            # code...
-            $warning = 'Terdeteksi adanya proses input data -> '.$tokens[$stackPtr-2]['content'].'::create() tanpa validasi, baca rekom https://s.id/laravelCS';
-            $data  = array(trim($tokens[$stackPtr]['content']));
-            $phpcsFile->addWarning($warning, $stackPtr, 'Found', $data);
-        }
+        } 
+        
             
         
 
