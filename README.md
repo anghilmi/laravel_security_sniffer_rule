@@ -1,5 +1,5 @@
 ## laravel_security_sniffer_rule
-Code security sniffer for Laravel based web project (Windows OS only)
+Code security sniffer for Laravel based web project. It works only on Windows OS as for now.
 
 ## Rules
 1. Detect weak hash (ex. md5, sha1)
